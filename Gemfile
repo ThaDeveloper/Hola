@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#for Twitter UI components inc. nvabar
+gem 'bootstrap-sass'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
