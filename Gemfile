@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+#devise gem for user accounts and authentication
+gem 'devise'
+
 #for Twitter UI components inc. nvabar
 gem 'bootstrap-sass'
 
