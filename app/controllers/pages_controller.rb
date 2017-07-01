@@ -7,6 +7,13 @@ class PagesController < ApplicationController
   end
 
   def profile
+    #grab the username from the URL as :id
+    if(User.find_by_username(params[:id]))
+    @username = params[:id]
+    else
+      #redirect to 400(root for now)
+      redirect_to root_path, :notice=>  "@username not found"
+    end
   end
 
   def explore

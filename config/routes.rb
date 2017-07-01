@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   
   get '/home' => 'pages#home' #override default routes
 
-  get '/profile' => 'pages#profile'
+  get '/users/:id' => 'pages#profile'
 
   get '/explore' => 'pages#explore'
 
