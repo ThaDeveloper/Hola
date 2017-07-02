@@ -12,7 +12,7 @@ class PagesController < ApplicationController
     @username = params[:id]
     else
       #redirect to 400(root for now)
-      redirect_to root_path, :notice=>  "@username not found"
+      redirect_to root_path, :notice=>  "Username not found"
     end
   end
 
