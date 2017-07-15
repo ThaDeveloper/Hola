@@ -1,42 +1,78 @@
 
-<div class="row">
-    <div class="col-xs-3">
-        <div class="panel panel-default">
-            <div class="panel-body"
-                 <p>Stats</p>
+<% if !user_signed_in?  #If not signed in render below %>
+
+<style>
+   body{
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('/bg.jpg') no-repeat center center fixed; #only display once, center horizontal and vertical, don't let scroll change position
+       -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    h1{
+        color: white;
         
-            </div>
+    }
+    .container-index{
+        margin-left: 15%;
+        margin-right: 15%;
+        color: white;
+    }
+    .text{
+        font-weight: 300;
+        font-size: 150%;
+    }
+    .footer-links{
+        text-align: center;
+        color: white;
+        margin-top: 30%;
+        font-size: 75%;
+        
+    }
+    .copyright{
+        text-align: center;
+        color: white;
+        font-size: 75%;
+    }
+    .log-in{
+        float: right;
+        width: 300px;
+        height: 150px;
+        margin-top: 7.5%;
+    }
+    .sign-up{
+        float: right;
+        width: 300px;
+        height: 250px;
+    }
+</style>
+<div class="container-index row">
+    <div class="col-sm-6">
+         <h1>Welcome to Hola.</h1>
+        <p class="text">
+            Connect with your buddies. Chat with new friends.<br/>
+            Share your adventures. Have fun <br/>
+            Just like a blog, but with few characters!
+        </p>
+    </div>
+    <div class="col-sm-6">
+        <div class="log-in panel">
+        
+       
+        </div>
+         <div class="sign-up panel">
+        
+       
         </div>
     </div>
-    <div class="col-xs-6">
-        <div class="panel panel-default">
-            <div class="panel-body"
-                 <p>Feed</p>
-        
-            </div>
-        </div>
-        
+    <div class="col-sm-12">
+        <p class="footer-links">About   Company   Blog   Help   Status   Jobs   Terms   Privacy   Cookies   Ads Info   Brand   Advertise   Businesses   Media   Developers</p>
+        <p class="copyright">&copy 2017 Hola, Inc.</p>
     </div>
-    <div class="col-xs-3">
-         <div class="panel panel-default">
-            <div class="panel-body"
-                 <p>About</p>
-        
-            </div>
-        </div>
-    </div>
-    
+   
 </div>
 
-<div class="row">
-    
-     <div class="col-xs-3">
-         <div class="panel panel-default">
-            <div class="panel-body"
-                 <p>Trends</p>
-        
-            </div>
-        </div>
-    </div>
-    
-</div>
+<% else %>
+ Signed in
+ 
+<% end %>
