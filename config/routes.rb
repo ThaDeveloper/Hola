@@ -1,7 +1,15 @@
 Rails.application.routes.draw do
   
-  resources :posts
   devise_for :users
+  resources :users do
+    member do
+      get :following, :followers
+    end
+  end
+  
+ resources :relationships, only: [:create, :destroy]
+ resources :posts
+  #define root url
   root 'pages#index'
   
   get '/home' => 'pages#home' #override default routes
