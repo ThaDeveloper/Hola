@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby "2.3.0" #specify ruby verison for heroku
 #devise gem for user accounts and authentication
 gem 'devise', '~> 3'
 
@@ -8,8 +9,10 @@ gem 'bootstrap-sass'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Use PG for heroku database
+gem 'pg'
+#Herokubun pre-req
+gem 'rails_12factor', group: :production #Not use locally, only on herouk
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
