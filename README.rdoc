@@ -1,5 +1,7 @@
 Hola
+
 {<img src="https://api.codacy.com/project/badge/Grade/5faf0aefea8b41488b6558f2b4d6274f" alt="Codacy code quality" />}[https://www.codacy.com/app/ThaDeveloper/Hola?utm_source=github.com&utm_medium=referral&utm_content=ThaDeveloper/Hola&utm_campaign=Badge_Grade]
+
 Just like a blog but with few characters. Get in touch
 
 This README would normally document whatever steps are necessary to get the
